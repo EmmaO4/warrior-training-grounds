@@ -12,13 +12,13 @@ This project was conceived by ideas presented by Stan State Computer Science Clu
  
 ## **FAST RECAP SUMMARY:**
 user-submitted, Stan-State only tailored youtube/Coursera app: Warrior Training Grounds -- name subject to change:  
-Stan State API login for authent to ensure relevant users  
-Study Hall  
-    flash card note submission  
-    volunteered student mentoring (monetized in the future through stan state -- similar to tutoring center) peer-reviewed videos (positive demeanor)/ linked videos by students that they thought were as informative as course material  
-    discussion board/ forum  
-map timeline from students/ alumni past semesters (favorite local commutes: food, hangouts, hiking, etc activities)  
-local discount submission page where students upload discounts for various things, separated by themes  
+- Stan State API login for authent to ensure relevant users  
+- Study Hall  
+    - flash card note submission  
+    - volunteered student mentoring (monetized in the future through stan state -- similar to tutoring center) peer-reviewed videos (positive demeanor)/ linked videos by - students that they thought were as informative as course material  
+    - discussion board/ forum  
+- map timeline from students/ alumni past semesters (favorite local commutes: food, hangouts, hiking, etc activities)  
+- local discount submission page where students upload discounts for various things, separated by themes  
 
 
 ## **NOTES:**
