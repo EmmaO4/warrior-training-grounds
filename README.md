@@ -31,20 +31,20 @@ user-submitted, Stan-State only tailored youtube/Coursera app: Warrior Training 
 
 Primary framework: Python + Flask   
 
-Frontend:  
-    undecided   
-Backend:  
-    OAuth:   
-        personal Microsoft Azure Entra ID SSO API for development to sim student login (if deployed, will be replaced by StanState login -- they use the same OAuth)   
-    DB:  
-        PostgreSQL  
-    Cloud Storage:  
-        need to research this. S3 for now, but costs money   
+- Frontend:  
+    - undecided   
+- Backend:  
+    - OAuth:   
+        - personal Microsoft Azure Entra ID SSO API for development to sim student login (if deployed, will be replaced by StanState login -- they use the same OAuth)   
+    - DB:  
+        - PostgreSQL  
+    - Cloud Storage:  
+        - need to research this. S3 for now, but costs money   
 
-Optional Services:   
-    Redis caching, Celery for background jobs, Analytics/Notifications  
-Deployment:   
-    Dockerized + CI/CD to cloud hosting  
+- Optional Services:   
+    - Redis caching, Celery for background jobs, Analytics/Notifications  
+- Deployment:   
+    - Dockerized + CI/CD to cloud hosting   
 
 
 
