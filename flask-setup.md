@@ -2,7 +2,7 @@ https://flask.palletsprojects.com/en/stable/quickstart/
 
 1. create project folder/working directory
 2. vscode: CTRL + P > ">" > "Python: Create Environment"
-3. dirs setup:  
+3. dirs folder structure looks like:  
     > .venv
     v project_name
         app.py
