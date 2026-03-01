@@ -1,0 +1,3 @@
+pgAdmin 4
+
+view server table: servers > databases > <table name> > schemas > public > tables > view all rows (Alt+Shift V)
