@@ -1,0 +1,2 @@
+Azure portal > Azure Active Directory > Microsoft Entra ID > Users > New user > create new user > fill out details > copy one-time password > create
+Azure portal > Azure Active Directory > Enterprise Applications > app > Users and groups > Add user / group > Users → select the user(s) → Select

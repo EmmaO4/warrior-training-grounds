@@ -1,14 +1,15 @@
 ENTRY FORMATTING
-    Timestamp (current day):    
+    Timestamp (current day) - name/sig:    
     list files touched by explicit file name:
-        change made
+        main.login():    
+            change made
         ...
         optimization made
         yada yada 
 
 The following is the first entry to serve as an example
 
-3.1.26:
+3.1.26 -r:
     static/style.css:
         created css file for future development
     templates/index.html:
@@ -28,3 +29,32 @@ The following is the first entry to serve as an example
     requirements.txt
         app dependencies    
     
+3.2.26 -r:
+    TODO.txt:
+        created file and added some stuff to agenda for bookkeeping
+    .gitignore:
+        created ignore file to prevent pushing sensitive creds to github
+    .env:
+        created .env file to store secrets and credentials
+    requirements.txt:
+        added dependencies:
+            msal
+            dotenv
+            + affiliated dependencies that came with them
+    tempalates/dashboard.html:
+        created file for user after signing in through SSO sim
+    notes/:
+        created folder to record notes on some processes to streamline interaction
+    app.py:
+        imported dependencies: os, uuid, msal, dotenv
+        added MS Azure secrets and api calling
+        [].signin():
+            create user session for api logic 
+        [].dashboard():
+            dashboard html template render 
+        [].signout():
+            implem req. will terminate user session to prevent manual URLing page 
+        [].callback():
+            api logic. understand this with more fidelity
+        []._build_msal_app():
+            api logic. understand this with more fidelity
