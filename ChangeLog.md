@@ -58,3 +58,5 @@ The following is the first entry to serve as an example
             api logic. understand this with more fidelity
         []._build_msal_app():
             api logic. understand this with more fidelity
+    notes/secrets-sharing.txt:
+        created file for info and directions on accessing secret keys needed for Azure SSO API
