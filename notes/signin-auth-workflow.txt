@@ -1,0 +1,8 @@
+1. User clicks "Sign in w Azure"
+2. uuid generates a unique session state
+3. MSAL builds auth URL with that state
+4. User authenticates at Microsoft
+5. Callback returns with state + code
+6. App validates uuid(state)
+7. MSAL exchanges code → tokens
+8. Tokens stored in MSAL cache
