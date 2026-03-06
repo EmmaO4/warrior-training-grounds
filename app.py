@@ -37,7 +37,7 @@ def home():
 # signin page using personal MS Azure Entra ID
 @app.route('/signin') # route protection
 def signin():
-    session["state"] = str(uuid.uuid4())  # gen a state value for authenticating. Cross-Site Request Forgery (CSRF)-attacks protection
+    session["state"] = str(uuid.uuid4())  # gen a state value for Cross-Site Request Forgery (CSRF)-attacks protection
     # build auth url with gen'd state
     auth_url = _build_msal_app().get_authorization_request_url(
         SCOPE,
@@ -85,6 +85,30 @@ def callback():
     return "Login failed"
     # OAuth compelte 
 
+"""
+ from msal library documentation: 
+    ClientApplication/ ConfidentialClientApplication(
+        client_id, 
+        client_credential=None, 
+        authority=None, 
+        validate_authority=True, 
+        token_cache=None, 
+        http_client=None, 
+        verify=True, 
+        proxies=None, 
+        timeout=None, 
+        client_claims=None, 
+        app_name=None, 
+        app_version=None, 
+        client_capabilities=None, 
+        azure_region=None, 
+        exclude_scopes=None, 
+        http_cache=None, 
+        instance_discovery=None, 
+        allow_broker=None, 
+        enable_pii_log=None, 
+        oidc_authority=None)
+"""
 # creates auth URLs, exchanges auth code for tokens, caches tokens
 def _build_msal_app(cache=None):
     return msal.ConfidentialClientApplication(
