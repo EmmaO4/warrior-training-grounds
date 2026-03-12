@@ -7,7 +7,7 @@ ENTRY FORMATTING
         optimization made
         yada yada                                                       
 ######################################################################
-The following is the first entry to serve as an example
+!!!!!! The following is the first entry to serve as an example. Entries are inputed top -> down!!!!!!
 
 3.1.26 -r:
     static/style.css:
@@ -28,6 +28,35 @@ The following is the first entry to serve as an example
         Full project overview 
     requirements.txt
         app dependencies    
+######################################################################
+3.12.26 -r:
+    app.py:
+        imported module: datetime
+        [].signout():
+            added session clearing for app n MS account when signing out to properly sign out due to inactivity or by choice
+        [].inactivity_signout():
+            template render for inactivity-signout.html file
+    inactivity-signout.html:
+        created file to handle sign out due to inactivity
+        [].check_inactivity():
+            function to check user inactivity. Inactivity works by checking the last HTTP request sent by interaction 
+    dashboard.html:
+        added refresh button to send HTTP request for testing inactivity. could've just refreshed the page but added this just cause fuq it    
+    TODO.txt:
+        added compartmentalizing config.py for configuration of app to agenda. Marked some stuff as done    
+
+3.3.26 -r:
+    made comments to understand backend logic in app.py 
+    notes/signin-auth-workflow.txt:
+        created note to help understand auth workflow from backend engineering perspective
+    dashboard.html:
+        injected username to display from passed argument from dashboard backend for page personalization
+    [].dashboard():
+        created login logic for unique users for personalized dashboards
+    []._build_msal_app(cache=None):
+        passed in addtional argumenbt, cache, to store user session state
+    sandbox.py:
+        created file for testing stuff
     
 3.2.26 -r:
     TODO.txt:
@@ -60,16 +89,3 @@ The following is the first entry to serve as an example
             api logic. understand this with more fidelity
     notes/secrets-sharing.txt:
         created file for info and directions on accessing secret keys needed for Azure SSO API
-
-3.3.26 -r:
-    made comments to understand backend logic in app.py 
-    notes/signin-auth-workflow.txt:
-        created note to help understand auth workflow from backend engineering perspective
-    dashboard.html:
-        injected username to display from passed argument from dashboard backend for page personalization
-    [].dashboard():
-        created login logic for unique users for personalized dashboards
-    []._build_msal_app(cache=None):
-        passed in addtional argumenbt, cache, to store user session state
-    sandbox.py:
-        created file for testing stuff

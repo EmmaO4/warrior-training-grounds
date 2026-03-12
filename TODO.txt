@@ -6,12 +6,16 @@ ITINERARY:
 
     set up sign in screen using MS SSO OAuth2
         user dashboard
-        disable manual url navigation to dashboard
-        persisting user sessions
-            auto logout after 5mins of inactivity
+
+        DONE:
+            disable manual url navigation to dashboard 
+            persisting user sessions
+                auto logout after 5mins of inactivity
 
     hookup db 
         store user info
+
+    make config.py to store constants and api info
 
 
 COMPLETED TASKS:

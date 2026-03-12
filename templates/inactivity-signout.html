@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Session Expired</title>
+
+    </head>
+    <body>
+        <a href="{{ authority }}/oauth2/v2.0/logout?post_logout_redirect_uri={{ url_for('home', _external=True) }}">Sign out of Microsoft</a>
+        <h4>You been signed out due to inactivity. sign back in <a href="{{ url_for('signin') }}">here</a>.</h4>
+    </body>
+</html>
